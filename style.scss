@@ -1,4 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,700&display=swap');
+// @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,700&display=swap');
+@font-face {
+    font-family: "Source Sans Pro";
+    src: url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,700&display=swap");
+    font-display: block;
+}
+
 body {
     margin: 0; 
     background-color: #222222; 
@@ -14,9 +20,9 @@ canvas {
     width: 100%;
     position: absolute; 
 	color: white;
-	font-family: 'Source Sans Pro', 'Helvetica', 'Arial', sans-serif;
+	font-family: 'Source Sans Pro', sans-serif;
     font-size: 2.4vw;
-    background-color:rgba(0, 0, 0, 0.5);
+    background-color:rgba(0, 0, 0, 0.3);
     .head {
         h1 {
             text-transform: uppercase;
@@ -38,15 +44,15 @@ canvas {
 } 
 
 .cta {
-    font-weight: 300;
     width: 45vw;
+    font-weight: 300;
     margin: 130px auto 30px;
     // font-size: 3.2vw;
     font-size: 2.8vw;
     &-btn {
         color: black;
         background-color: white;
-        font-weight: 400;
+        // font-weight: 400;
         border-radius: 5%;
         padding: 18px 45px;
         font-size: 1.5vw;
@@ -61,6 +67,7 @@ canvas {
     }   
 }
 
+// media queries for container font-size and cta, cta-btn font-size
 @media (max-width: 960px){
     .container {
         font-size: 2.9vw;
@@ -74,7 +81,6 @@ canvas {
     }
 }
 
-// media queries for container font-size and cta, cta-btn font-size
 @media (max-width: 700px){
     .container {
         font-size: 4.5vw;
