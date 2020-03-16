@@ -1,0 +1,23 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "This is a portfolio site created using HTML, CSS, Javascript and Three.js libraries",
+  "main": "index.js",
+  "scripts": {
+    "start": "open index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arelyguevara/arelyguevara.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arelyguevara/arelyguevara.github.io/issues"
+  },
+  "homepage": "https://arelyguevara.github.io",
+  "dependencies": {
+    "aos": "^2.3.4"
+  }
+}

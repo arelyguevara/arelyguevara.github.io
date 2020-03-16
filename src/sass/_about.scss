@@ -1,0 +1,49 @@
+// styles for about page
+
+// header text
+.header {
+    margin: 5% 10% 0;
+    font-size: 6.5vw;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    line-height: .9;
+    &__text {
+        display: block;
+        &--inner {
+            color: white;
+            -webkit-text-fill-color: black; /* Will override color (regardless of order) */
+            -webkit-text-stroke-width: 2px;
+            -webkit-text-stroke-color: white;
+        }
+        &--outer {
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
+}
+// about me text
+.about{
+    width: 47%;
+    margin: 40px auto;
+    &__text {
+        font-family: 'Rubik', sans-serif;
+        font-weight: 300;
+        font-size: 3.5vmin;
+    }
+}
+
+// meida query
+@media (max-width: 768px){
+    .header {
+        font-size: 8.5vmin;
+        margin: 0 5% 0;
+        &__text {
+            display: inline;
+        }
+    }
+    .about {
+        width: 90%;
+        margin: 5% auto ;
+    }
+}

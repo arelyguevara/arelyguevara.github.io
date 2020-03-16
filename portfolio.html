@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Rubik:200,300,400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="src/css/styles.css" />
+        <link rel="stylesheet" href="node_modules/aos/dist/aos.css" />
+        <title>Portfolio Page</title>
+    </head>
+    <body>
+        <div id="portfolio">
+            <!-- NAVBAR -->
+            <nav 
+            class="navbar"
+            data-aos="zoom-in">
+                <div class="navbar__link navbar__link--brand">
+                    <a href="./index.html">
+                        Arely Guevara
+                    </a>
+                </div>
+                <div class="navbar__link--toggle">
+                    &#9776;
+                </div>
+                <div class="navbar__items">
+                    <div class="navbar__link">
+                        <a href="about.html">About</a>
+                    </div>
+                    <div class="navbar__link">
+                        <a href="portfolio.html">Portfolio</a>
+                    </div>
+                    <div class="navbar__link">
+                        <a href="https://arelyguevara.github.io/blog/" >Blog</a>
+                    </div>
+                </div>
+            </nav>
+            <!-- /NAVBAR -->
+    
+
+            <!-- PORTFOLIO -->
+            <main class="portfolio">
+                <!-- PROJECT ONE -->
+                <section class="portfolio__forward portfolio-container"
+                data-aos="fade-right"
+                data-aos-delay="200"
+                data-aos-duration="1000">
+                    <div>
+                        <img src="src/img/portfolio1.png" class="portfolio__forward--img"/>
+                    </div>
+                    <div class="portfolio__forward--text">
+                        <div class="portfolio-text">
+                            <h3>Personal Site</h3>
+                            <p>My personal site created with vanilla Javascript and webpack </p>
+                            <ul>
+                                <li>HTML</li>
+                                <li>CSS & SASS</li>
+                                <li>Javascript</li>
+                                <li>Webpack</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <!-- /PROJECT ONE -->
+                <!-- PROJECT TWO -->
+                <section class="portfolio__backward portfolio-container"
+                data-aos="fade-left"
+                data-aos-duration="1000">
+                    <div>
+                        <img src="src/img/portfolio3.png" class="portfolio__backward--img"/>
+                    </div>
+                    <div class="portfolio__backward--text">
+                        <div class="portfolio-text">
+                            <h3>Ecommerce PWA</h3>
+                            <p>An ecommerce site made with React, Node, and MySQL.</p>
+                            <ul>
+                                <li>React</li>
+                                <li>Express</li>
+                                <li>Node</li>
+                                <li>MySQL</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <!-- /PROJECT TWO -->
+                <!-- PROJECT THREE -->
+                <section class="portfolio__forward"
+                data-aos="fade-right"
+                data-aos-delay="200"
+                data-aos-duration="1000">
+                    <div>
+                        <img src="src/img/portfolio2.png" class="portfolio__forward--img"/>
+                    </div>
+                    <div class="portfolio__forward--text">
+                        <div class="portfolio-text">
+                            <h3>London Site</h3>
+                            <p>A project originally created as a static site and then converted into React</p>
+                            <ul>
+                                <li>React</li>
+                                <li>CSS & SASS</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <!-- /PROJECT THREE -->
+            </main>
+            <!-- /PORTFOLIO -->
+        </div>
+        
+        <script src="node_modules/aos/dist/aos.js"></script>
+        <script src="src/js/nav.js"></script>
+        <script>
+            AOS.init();
+        </script>
+
+    </body>
+</html>

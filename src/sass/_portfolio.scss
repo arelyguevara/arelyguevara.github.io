@@ -1,0 +1,101 @@
+.portfolio{
+    position: relative;
+    width: 100%;
+    &-container{
+        max-width: 100%;
+    }
+    &__forward {
+        &--text {
+            margin-top: 5%;
+            margin-left: -50px;
+        }
+    }
+    &__backward {
+        flex-direction: row-reverse;
+        &--text {
+            margin-top: 5%;
+            margin-right: -50px;
+        }
+    }
+    &__forward, &__backward {
+        display: flex;
+        div {
+            width: 50%;
+        }
+        &--img {
+            max-width: 100%;
+        }
+        &--text {
+            background-color: #121010;
+            height: 250px;
+            h3 {
+                font-family: 'Source Sans Pro', sans-serif;
+                font-size: 2.5vw;
+                font-weight: 600;
+                margin-top: 10px;
+                text-transform: uppercase;
+            }
+            p {
+                font-family: 'Rubik', sans-serif;
+                font-size: 1.4vw;
+                font-weight: 200;
+            }
+            ul {
+                font-family: 'Source Sans Pro', sans-serif;
+                list-style: none;
+                font-size: 1.2vw;
+                font-weight: 200;
+                padding: 0;
+            }
+            li {
+                display: inline;
+                padding-right: 5px;
+            }
+        }
+    }
+}
+
+.portfolio-text {
+    margin: 30px auto;
+}
+
+@media(max-width:980px){
+    .portfolio {
+        &__forward, &__backward{
+            &--text {
+                height: 150px;
+            } 
+        }
+    }
+}
+
+@media(max-width:720px){
+    .portfolio {
+        h3 {
+            font-size: 4vw;
+        }
+        p {
+            font-size: 3.5vw;
+        }
+        ul {
+            font-size: 2.5vw;
+        }
+        &__forward, &__backward{
+            display: block;
+            div {
+                width: 100%;
+            }
+            &--img {
+                padding-left: 0px;
+                margin-right: 0px;
+                margin-left: 0px;
+            }
+            &--text {
+                padding: 20px 10px;
+                margin: 0 ;
+                // height: 150px;
+                height: 100%;
+            }
+        }
+    }
+}

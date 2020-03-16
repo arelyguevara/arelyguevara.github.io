@@ -1,0 +1,26 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    background-color: black;
+}
+
+body, h1, h2, h3, h4, p, a {
+    margin: 0;
+    font-size: 100%; 
+    font-weight: normal;
+}
+
+* {
+    box-sizing: border-box; 
+}
+
+#about, #portfolio {
+    position: absolute;
+    min-height: 100%;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin: 0;
+}
+
+// breakpoint variables

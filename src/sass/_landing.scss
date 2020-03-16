@@ -1,0 +1,89 @@
+// resizes three.js animation
+canvas {
+    width: 100%;
+    height: 100%;
+}
+.landing {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 2.4vw;
+    background-color: rgba(0, 0, 0, 0.3);
+    &-content {
+        text-align: center;
+        margin: 0;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 40%;
+        left: 50%;
+    }
+    &-heading {
+        margin-top: 20px;
+        font-size: 4.7vw;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-bottom: 0;
+        width: 100vw;
+    }
+    &-subheading {
+        font-weight: bold;
+        margin-top: 0;
+    }
+    &-cta {
+        width: 45vw;
+        font-weight: 300;
+        margin: 130px auto 30px;
+        font-size: 2.8vw;
+        &-btn {
+            color: black;
+            background-color: white;
+            border-radius: 5%;
+            padding: 18px 45px;
+            font-size: 1.5vw;
+            letter-spacing: 0rem;
+            text-transform: uppercase;
+            &:hover {
+                animation-play-state: paused;
+                color: white;
+                background-color: transparent;
+            }
+        }
+    }
+}
+
+@media (max-width: 960px){
+    .landing {
+        font-size: 2.9vw;
+        &-heading{
+            font-size: 5.8vw;
+        }
+        &-cta {
+            font-size: 3.2vw;
+            margin: 100px auto 30px;
+            &-btn {
+                font-size: 2vw;
+            }
+        }
+    }
+
+}
+
+@media (max-width: 700px){
+    .landing {
+        font-size: 4.5vw;
+        &-heading{
+            font-size: 9vw;
+        }
+        &-cta {
+            width: 80vw;
+            margin: 100px auto 10%;
+            font-size: 5vw;
+            &-btn {
+                font-size: 3.2vw;
+            }
+        }
+    }
+
+}

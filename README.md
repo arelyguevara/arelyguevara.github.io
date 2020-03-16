@@ -1,14 +1,23 @@
-# Landing Page
-Experimenting with THREE animations I decided to build something with the [threex.terrain extension](https://github.com/jeromeetienne/threex.terrain)
+# Portfolio
+This is a portfolio site created using HTML, CSS, Javascript and Three.js libraries
 
-## Usage
-This is a static site using HTML, CSS and the THREE.js WEBGL library without any npm scripts (at this moment).
+## 🚀 Quick Start
 
-You will have to clone or download this repo and find the path to the index.html file and paste it in your browser.
+In order to run this app you will have to run these commands
 
-Alternately, you can use this command within your terminal to open the site:
-
-```
+```shell
 cd arelyguevara.github.io
-open ./index.html
+npm install
+npm run start
 ```
+
+## 🔮 Future Development
+- [ ] convert app into webpack
+- [ ] add project entries
+- [ ] add favicon
+- [ ] add distortion to landing page
+- [ ] add images to Readme
+
+## 🎓 References 
+[threex.terrain](https://github.com/jeromeetienne/threex.terrain)
+Used this in order to create terrain on the homepage
