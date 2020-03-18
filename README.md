@@ -12,7 +12,7 @@ npm run start
 ```
 
 ## 🔮 Future Development
-- [ ] convert app into webpack
+- [x] <del>convert app into webpack</del> bundle app
 - [ ] add project entries
 - [ ] add favicon
 - [ ] add distortion to landing page
@@ -20,4 +20,5 @@ npm run start
 
 ## 🎓 References 
 [threex.terrain](https://github.com/jeromeetienne/threex.terrain)
+
 Used this in order to create terrain on the homepage
