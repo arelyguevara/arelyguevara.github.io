@@ -4,3 +4,4 @@
 .vscode
 .sass-cache
 /node_modules
+/.cache
